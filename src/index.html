@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rafał Spychaj - Front-End Developer Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn t work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div id="page" class="site">
+
+        <header id="masthead" class="site-header">
+            <div class="header__container container">
+                <nav class="header__nav">
+                    <ul class="main-menu">
+                        <li class="main-menu__item"><a href="#skills">Umiejętności</a></li>
+                        <li class="main-menu__item"><a href="#projects">Projekty</a></li>
+                        <li class="main-menu__item"><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="main" class="hero-section">
+            <div class="blur"></div>
+            <div class="hero-section__content">
+                <div class="hero-section__container container">
+                    <h1 class="hero-section__name">Rafał Spychaj</h1>
+                    <h2 class="hero-section__prof">Front-end / Web Developer</h2>
+                </div>
+            </div>
+            <div class="hero-section__arrow-down">
+                <a href="#skills">
+                    <span class="fas fa-angle-double-down"></span>
+                </a>
+            </div>
+        </div>
+
+        <div id="skills" class="skills-section">
+            <div class="skills-section__container container">
+                <h2 class="skills-section__title">Umiejętności</h2>
+                <ul class="skills-section__list">
+                    <li class="skills-section__item">
+                        <span class="fab fa-html5" title="HTML5"></span>
+                    </li>
+                    <li class="skills-section__item">
+                        <span class="fab fa-css3-alt" title="CSS3"></span>
+                    </li>
+                    <li class="skills-section__item">
+                        <span class="fab fa-sass" title="Sass"></span>
+                    </li>
+                    <li class="skills-section__item">
+                        <span class="fab fa-js" title="JavaScript"></span>
+                    </li>
+                    <li class="skills-section__item">
+                        <span class="fab fa-gulp" title="Gulp"></span>
+                    </li>
+                    <li class="skills-section__item">
+                        <span class="fab fa-git" title="Git"></span>
+                    </li>
+                    <li class="skills-section__item">
+                        <span class="fab fa-wordpress" title="Wordpress"></span>
+                    </li>
+                    <li class="skills-section__item" style="display: flex;justify-content: center;align-items: center;">
+                        <span class="php-icon" title="PHP"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="projects" class="projects-section">
+            <div class="projects-section__container container">
+                <h2 class="projects-section__title">Projekty</h2>
+                <div class="projects-section__project">
+                    <div class="projects-section__desc">
+                        <h3 class="projects-section__name">Pacyfic.eu</h3>
+                        <ul class="projects-section__tech">
+                            <li class="projects-section__tech-item"><span class="fab fa-html5" title="HTML5"></span></li>
+                            <li class="projects-section__tech-item"><span class="fab fa-css3-alt" title="CSS3"></span></li>
+                            <li class="projects-section__tech-item"><span class="fab fa-js" title="JavaScript"></span></li>
+                            <li class="projects-section__tech-item"><span class="fab fa-wordpress" title="Wordpress"></span></li>
+                        </ul>
+                        <a href="https://pacyfic.eu" class="projects-section__button" target="_blank" title="Pacyfic.eu">Przejdź do strony</a>
+                    </div>
+                    <div class="projects-section__screen">
+                        <!--                        <img class="projects-section__screen-img-empty" src="images/laptop-image.png" alt="project_screen" width="100%" height="auto">-->
+                        <img class="projects-section__screen-img" src="images/pacyfic-laptop-screen-768.png" alt="project_screen" title="Pacyfic.eu">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact-section">
+            <div class="contact-section__container container">
+                <h2 class="contact-section__title">Kontakt</h2>
+                <div class="contact-section__form">
+                    <h3 class="contact-section__form-title">Skontaktuj się ze mną</h3>
+                    <form action="https://formspree.io/rafspy1@gmail.com" method="POST">
+                        <div class="contact-section__form-field">
+                            <label for="name">Nazwa</label>
+                            <input type="text" name="name" class="contact-section__form-input" id="name" required>
+                        </div>
+                        <div class="contact-section__form-field">
+                            <label for="mail">E-mail</label>
+                            <input type="text" name="mail" class="contact-section__form-input" id="mail" required>
+                        </div>
+                        <div class="contact-section__form-field">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" cols="4" class="contact-section__form-input" name="message" required></textarea>
+                        </div>
+                        <input class="contact-section__form-button" type="submit" value="Wyślij">
+                    </form>
+                </div>
+                <div class="contact-section__links">
+                    <h4 class="contact-section__links-name">Rafał Spychaj</h4>
+                    <a class="contact-section__links-mail" href="mailto:rafspy1@gmail.com">rafspy1@gmail.com</a>
+                    <ul class="contact-section__links-list">
+                        <li class="contact-section__links-item"><a href="https://www.facebook.com/profile.php?id=100003166407886" target="_blank"><span class="fab fa-facebook-square" title="facebook"></span></a></li>
+                        <li class="contact-section__links-item"><a href="https://www.linkedin.com/in/rafa%C5%82-spychaj-0575b9132/" target="_blank"><span class="fab fa-linkedin" title="linkedin"></span></a></li>
+                        <li class="contact-section__links-item"><a href="#" target="_blank"><span class="fab fa-github-square" title="github"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="scroll-top" class="scroll-top">
+            <div class="arrow-top">
+                <a href="#main">
+                <span class="fas fa-chevron-circle-up"></span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jQuery-viewport-checker-master/dist/jquery.viewportchecker.min.js"></script>
+</body>
+
+</html>
